@@ -6,7 +6,7 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
             <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
     </head>
@@ -26,13 +26,13 @@
                     <a class="nav-link active" aria-current="page" href="#welcome">WELCOME</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#pastors">OUR PASTORS</a>
+                    <a class="nav-link active" href="#about">OUR PASTORS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#beliefs">OUR BELIEFS</a>
+                    <a class="nav-link active" href="#belief">OUR BELIEFS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#services">OUR SERVICES</a>
+                    <a class="nav-link" href="#service">OUR SERVICES</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#giving">GIVING</a>
@@ -40,9 +40,6 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#contact">CONTACT US</a>
                   </li>
-                  <!-- <li class="nav-item">
-                    <a class="nav-link" href="#footer">Footer</a>
-                  </li> -->
                 </ul>
               </div>
             </div>
@@ -53,7 +50,7 @@
 
     <Section id="welcome">
         <div class="container">
-            <div class="welcome text-center">
+            <div class="welcome text-center wow fadeInUp">
                 <h1>Renewed Hope-Renewed Life Ministry</h1>
                 <p>Welcome to Renewed Hope-Renewed Life Ministry Online! 
                 We are so happy that you are here! We invite you to watch one of our
@@ -67,10 +64,10 @@
     <Section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center wow fadeInLeft">
                     <img src="images/momDad.jpg" class="img-fluid">
                 </div>
-                <div class="col-md-6 text-justify">
+                <div class="col-md-6 text-justify wow fadeInRight">
                     <h3>Our Pastors</h3>
                     </br>
                     <p>Pastor Bob and Anna Morales were launched into ministry with a handful of members faithful to the lord, who 
@@ -82,7 +79,7 @@
                     the small congregation as they witnessed him answer prayer, move powerfully in their meetings, and add to their congregation 
                     with testimonies of miraculous life transformation.</p>
                 </div>
-                <div class="col-md-6 text-justify">
+                <div id="belief" class="col-md-6 text-justify wow fadeInLeft">
                     <h3>Our Beliefs</h3>
                     <p>We believe that God eternally exists in three Persons—the Father, the Son, and the Holy Spirit; and that these 
                     three are one God, having the same nature, attributes, and perfections, and worthy of the same worship, reverence, 
@@ -92,7 +89,7 @@
                     spiritual gifts upon the Church and convicts the world of sin and the judgment to come.</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
+                    <div class="embed-responsive embed-responsive-16by9 wow fadeInRight">
                         <iframe width="560" height="360" src="https://www.youtube.com/embed/AXDsGUVWHt4?controls=0" 
                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                         encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -108,10 +105,10 @@
         <div class="container">
             <div class="row">
                
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInLeft">
                         <img src="images/prayer.png" class="img-fluid">
                     </div>
-                        <div class="col-md-6 text-center ">
+                        <div class="col-md-6 text-center wow fadeInRight">
                         </br>
                         </br>
                         </br>
@@ -135,7 +132,7 @@
 
     <!----------------Giving----------------------->
     <section id="giving">
-        <div class="container"></br></br></br></br>
+        <div class="container wow pulse"></br></br></br></br>
             <h3 class="text-center">GIVING</h3>
             <p class="text-center">The Bible shows us that generosity is about giving more than what is 
                 required therefore we find ways to joyfully give back.</p>
@@ -169,7 +166,7 @@
 
      <section id="contact">
         <div class="container">
-            <div class=" contact text-center">
+            <div class=" contact text-center wow fadeInUp">
                 <h3>Contact Us</h3>
                     <p>(570)555-5555</br>www.contactus@rhrlm.org</p>
                     <p>Enter email to subscribe!</p>
@@ -222,6 +219,11 @@
     });
     </script>
 
+    <!-------------------Animation---------------->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
  </body>
 </html>
 
